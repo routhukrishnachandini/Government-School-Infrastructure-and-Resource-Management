@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Dashboard</title>
+    <link rel="stylesheet" href="/css/admin_complaint.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-home-container">
+            <a href="http://localhost:8000/api/v1/users/admin" class="back-home-button">Back to Home</a>
+        </div>
+        <div class="feedback-container">
+            <a href="http://localhost:8000/api/v1/users/allFeedbacks" class="feedback-button">Feedback</a>
+        </div>
+        <h1>Complaint Dashboard</h1>
+        <div id="complaints-list">
+            <% if (complaints.length > 0) { %>
+                <% complaints.forEach(complaint => { %>
+                    <div class="complaint">
+                        <p><strong>Name:</strong> <%= complaint.ownerName%></p>
+                        <p><strong>School:</strong> <%= complaint.schoolName%></p>
+                        <p><strong>Category:</strong> <%= complaint.category %></p>
+                        <p><strong>Description:</strong> <%= complaint.description%></p>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>No complaints found.</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

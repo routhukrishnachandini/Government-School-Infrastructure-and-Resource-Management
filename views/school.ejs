@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Selection</title>
+    <link rel="stylesheet" href="/css/school.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">Select Your School</h1>
+        <div class="logout-container">
+            <a href="http://localhost:8000/api/v1/users/login" id="logout-button" class="logout-button">Logout</a>
+        </div>
+        <form class="school-selection-form">
+            <label for="school-select">Choose a school:</label>
+            <select id="school-select" name="school" required>
+                <option value="" disabled selected>Select a school</option>
+                <option value="ZPHS-Anantapur">ZPHS Anantapur</option>
+                <option value="ZPHS-Chittoor">ZPHS Chittoor</option>
+                <option value="ZPHS-EastGodavari">ZPHS East Godavari</option>
+                <option value="ZPHS-Guntur">ZPHS Guntur</option>
+                <option value="ZPHS-Krishna">ZPHS Krishna</option>
+                <option value="ZPHS-Kurnool">ZPHS Kurnool</option>
+                <option value="ZPHS-Nellore">ZPHS Nellore</option>
+                <option value="ZPHS-Prakasam">ZPHS Prakasam</option>
+                <option value="ZPHS-Srikakulam">ZPHS Srikakulam</option>
+                <option value="ZPHS-Vizianagaram">ZPHS Vizianagaram</option>
+                <option value="ZPHS-Visakhapatnam">ZPHS Visakhapatnam</option>
+                <option value="ZPHS-WestGodavari">ZPHS West Godavari</option>
+                <option value="ZPHS-YSRKadapa">ZPHS YSR Kadapa</option>
+                <option value="ZPHS-Adilabad">ZPHS Adilabad</option>
+                <option value="ZPHS-BhadradriKothagudem">ZPHS Bhadradri Kothagudem</option>
+                <option value="ZPHS-Hyderabad">ZPHS Hyderabad</option>
+                <option value="ZPHS-Jagtial">ZPHS Jagtial</option>
+                <option value="ZPHS-Jangaon">ZPHS Jangaon</option>
+                <option value="ZPHS-JayashankarBhupalpally">ZPHS Jayashankar Bhupalpally</option>
+                <option value="ZPHS-JogulambaGadwal">ZPHS Jogulamba Gadwal</option>
+                <option value="ZPHS-Kamareddy">ZPHS Kamareddy</option>
+                <option value="ZPHS-Karimnagar">ZPHS Karimnagar</option>
+                <option value="ZPHS-Khammam">ZPHS Khammam</option>
+                <option value="ZPHS-KumuramBheemAsifabad">ZPHS Kumuram Bheem Asifabad</option>
+                <option value="ZPHS-Mahabubabad">ZPHS Mahabubabad</option>
+                <option value="ZPHS-Mahabubnagar">ZPHS Mahabubnagar</option>
+                <option value="ZPHS-Mancherial">ZPHS Mancherial</option>
+                <option value="ZPHS-Medak">ZPHS Medak</option>
+                <option value="ZPHS-MedchalMalkajgiri">ZPHS Medchal–Malkajgiri</option>
+                <option value="ZPHS-Mulugu">ZPHS Mulugu</option>
+                <option value="ZPHS-Nagarkurnool">ZPHS Nagarkurnool</option>
+                <option value="ZPHS-Nalgonda">ZPHS Nalgonda</option>
+                <option value="ZPHS-Narayanpet">ZPHS Narayanpet</option>
+                <option value="ZPHS-Nirmal">ZPHS Nirmal</option>
+                <option value="ZPHS-Nizamabad">ZPHS Nizamabad</option>
+                <option value="ZPHS-Peddapalli">ZPHS Peddapalli</option>
+                <option value="ZPHS-RajannaSircilla">ZPHS Rajanna Sircilla</option>
+                <option value="ZPHS-RangaReddy">ZPHS Ranga Reddy</option>
+                <option value="ZPHS-Sangareddy">ZPHS Sangareddy</option>
+                <option value="ZPHS-Siddipet">ZPHS Siddipet</option>
+                <option value="ZPHS-Suryapet">ZPHS Suryapet</option>
+                <option value="ZPHS-Vikarabad">ZPHS Vikarabad</option>
+                <option value="ZPHS-Wanaparthy">ZPHS Wanaparthy</option>
+                <option value="ZPHS-WarangalRural">ZPHS Warangal Rural</option>
+                <option value="ZPHS-WarangalUrban">ZPHS Warangal Urban</option>
+                <option value="ZPHS-YadadriBhuvanagiri">ZPHS Yadadri Bhuvanagiri</option>
+
+
+            </select>
+            <input type="text" id="school-location" name="school-location" placeholder="Location" required>
+            
+            <input type="submit" value="Submit" id="submit-button">
+        </form>
+    </div>
+    <script src="/js/school.js"></script>
+</body>
+</html>

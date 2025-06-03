@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ఫిర్యాదు పత్రం </title>
+    <link rel="stylesheet" href="/css/complint_test.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ఫిర్యాదు రూపం</h1>
+        <form class="complaint-form" id="complaint-form">
+            <select id="category" name="category" required>
+                <option value="" disabled selected>వర్గాన్ని ఎంచుకోండి</option>
+                <option value="academic">Academic</option>
+                <option value="administrative">Administrative</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea id="description" name="description" placeholder="వివరణ" rows="5" required></textarea>
+            <input type="submit" value="ఫిర్యాదు సమర్పించండి">
+        </form>
+    </div>
+    <script src="/js/complaint_telugu.js"></script>
+</body>
+</html>

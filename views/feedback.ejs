@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="/css/feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">Feedback</h1>
+        <form class="feedback-form">
+            <select id="experience-type" name="experience-type" required>
+                <option value="" disabled selected>Rate your overall experience</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="below-average">Below Average</option>
+                <option value="poor">Poor</option>
+            </select>
+            <textarea id="comments" name="comments" placeholder="Feedback" rows="5" required></textarea>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+    <script src="/js/feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grievance System</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <!-- Logout button container placed outside the main content container -->
+    <div class="logout-container">
+        <a href="http://localhost:8000/api/v1/users/login" class="logout-button">Logout</a>
+    </div>
+    
+    <div class="container">
+        <h1>Welcome Admin</h1>
+        <div class="language-selection">
+            <h2>Select the type of Data:</h2>
+            <div class="language-buttons">
+                <!-- Setting API endpoints as data attributes -->
+                <button id="complaint-button" class="language-button" data-href="/api/v1/complaint/allComplaints">Complaints</button>
+                <button id="feedback-button" class="language-button" data-href="/api/v1/users/allFeedbacks">Feedbacks</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/admin_home.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/login.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background: white;
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust width as needed */
+    min-height: 650px; /* Increased height for a longer box */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1s ease-out; /* Fade-in animation for the container */
+}
+
+.language-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensure it stays on top of other content */
+}
+
+.language-button {
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-button:hover {
+    background-color: #5e0b9f; /* Darker purple */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px; /* Consistent font size for heading */
+    color: #333; /* Improved color for better readability */
+    animation: slideIn 0.6s ease-out; /* Slide-in animation for heading */
+}
+
+.signup-form label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333; /* Improved color for better readability */
+    animation: fadeIn 0.5s ease-out; /* Fade-in animation for labels */
+}
+
+.signup-form input[type="text"], 
+.signup-form input[type="email"], 
+.signup-form input[type="password"], 
+.signup-form select, 
+.signup-form input[type="submit"] {
+    width: calc(100% - 24px); /* Adjust width to account for padding and borders */
+    padding: 12px; /* Increased padding for better spacing */
+    margin: 10px 0; /* Consistent vertical spacing */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus states */
+}
+
+.signup-form input[type="text"]:focus, 
+.signup-form input[type="email"]:focus, 
+.signup-form input[type="password"]:focus, 
+.signup-form select:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.2); /* Shadow effect on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+.signup-form select {
+    height: 44px; /* Increase height to match other input fields */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus states */
+}
+
+.signup-form input[type="submit"] {
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    padding: 12px; /* Adjust padding to match other inputs */
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #5e0b9f; /* Darker purple */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.login-redirect {
+    margin-top: 20px; /* Space between form and link */
+}
+
+.login-redirect p {
+    margin: 0;
+    font-size: 16px; /* Consistent font size */
+}
+
+.login-redirect a {
+    color: #6a0dad;; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.login-redirect a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

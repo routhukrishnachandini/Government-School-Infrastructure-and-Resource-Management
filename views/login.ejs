@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <!-- Language Selection Button -->
+    <div class="language-container">
+        <a href="http://localhost:8000/" class="language-button">Language Selection</a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1 id="page-title">Login</h1>
+        <div class="login-option">
+            <div class="radio-option">
+                <input type="radio" id="normal-login" name="login-type" value="normal" checked>
+                <label for="normal-login" id="normal-label">User Login</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="admin-login" name="login-type" value="admin">
+                <label for="admin-login" id="admin-label">Admin Login</label>
+            </div>
+        </div>
+        <form class="login-form">
+            <input type="text" id="username" name="username" 
+                   placeholder="Username" 
+                   required>
+            
+            <input type="password" id="password" name="password" 
+                   placeholder="Password" 
+                   required>
+            
+            <input type="submit" value="Login" id="submit-button">
+        </form>
+        <div class="register-redirect">
+            <p>Don't have an account? <a href="http://localhost:8000/api/v1/users/register" id="register-link">Register here</a></p>
+        </div>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    min-height: 650px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+.language-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.language-button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-button:hover {
+    background-color: #5e0b9f;
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    animation: slideIn 0.6s ease-out;
+}
+
+.login-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.radio-option:last-child {
+    margin-right: 0;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-option label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    position: relative;
+}
+
+.radio-option input[type="radio"]:checked + label {
+    background-color: #d4a3f5; /* Light purple for checked state */
+    border: 1px solid #b98cd9; /* Slightly darker purple for border */
+}
+
+.login-form input[type="text"], 
+.login-form input[type="password"], 
+.login-form input[type="submit"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input[type="text"]:focus, 
+.login-form input[type="password"]:focus, 
+.login-form select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.2);
+    outline: none;
+}
+
+.login-form input[type="submit"] {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 12px;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #5e0b9f;
+    transform: scale(1.05);
+}
+
+.register-redirect {
+    margin-top: 20px;
+}
+
+.register-redirect p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.register-redirect a {
+    color: #5e0b9f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-redirect a:hover {
+    text-decoration: underline;
+    color: #6a0dad;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

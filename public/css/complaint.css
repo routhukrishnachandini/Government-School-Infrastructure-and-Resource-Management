@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/complaint.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .container   
+   {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Set maximum width */
+    text-align: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 80vh; /* Adjust height as needed */
+  }
+  
+  
+  #complaints-list {
+    max-height: calc(100% - 150px); /* Adjust based on other elements' height */
+    overflow-y: auto;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .complaint {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .complaint p {
+    margin: 5px 0;
+  }
+  

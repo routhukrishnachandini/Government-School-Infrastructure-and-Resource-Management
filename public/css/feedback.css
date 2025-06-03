@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/feedback.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background: white;
+    padding: 35px; /* Slightly increased padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Increased width of the container */
+    text-align: center;
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px; /* Consistent font size for headings */
+    animation: slideIn 0.5s ease-out; /* Slide-in animation for heading */
+}
+
+.feedback-form {
+    margin-top: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px; /* Reduced space between labels and inputs */
+    font-size: 16px; /* Consistent font size for labels */
+    color: #333; /* Improved color for better readability */
+    text-align: left;
+    animation: fadeIn 0.5s ease-out; /* Fade-in animation for labels */
+}
+
+.feedback-form input[type="text"], 
+.feedback-form input[type="email"], 
+.feedback-form textarea, 
+.feedback-form select, 
+.feedback-form input[type="submit"] {
+    width: calc(100% - 20px); /* Adjusted width to account for increased padding */
+    padding: 14px; /* Increased padding for form elements */
+    margin: 8px 0; /* Reduced margin to decrease space between elements */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    font-size: 16px; /* Consistent font size for form elements */
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+
+.feedback-form textarea {
+    resize: vertical; /* Allow resizing only vertically */
+    min-height: 120px; /* Increased minimum height of textarea */
+}
+
+.feedback-form select {
+    padding: 12px; /* Increased padding inside the dropdown */
+}
+
+.feedback-form input[type="text"]:focus, 
+.feedback-form input[type="email"]:focus, 
+.feedback-form textarea:focus, 
+.feedback-form select:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.2); /* Shadow effect on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    padding: 14px; /* Increased padding for the submit button */
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

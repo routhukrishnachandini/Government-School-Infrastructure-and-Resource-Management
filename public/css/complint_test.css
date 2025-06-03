@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/complaint.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    animation: slideIn 0.5s ease-out;
+}
+
+.complaint-form {
+    margin-top: 20px;
+    text-align: left; /* Align form elements to the left */
+}
+
+.complaint-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.complaint-form input[type="text"], 
+.complaint-form input[type="email"], 
+.complaint-form textarea, 
+.complaint-form select, 
+.complaint-form input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px; /* Increased spacing between elements */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.complaint-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.complaint-form select {
+    padding: 12px;
+}
+
+.complaint-form input[type="text"]:focus, 
+.complaint-form input[type="email"]:focus, 
+.complaint-form textarea:focus, 
+.complaint-form select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.2);
+    outline: none;
+}
+
+.complaint-form input[type="submit"] {
+    background-color: #FFA500; /* Orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 14px;
+}
+
+.complaint-form input[type="submit"]:hover {
+    background-color: #FF8C00; /* Darker orange */
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

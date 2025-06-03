@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>నమోదు</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">నమోదు</h1>
+        <div class="language-container">
+            <a href="http://localhost:8000/" class="language-button">భాష ఎంపిక</a>
+        </div>
+        <form class="signup-form" id="signup-form">
+            <input type="text" id="username" name="username" placeholder="వినియోగదారుడి పేరు" required>
+            <input type="text" id="fullname" name="fullname" placeholder="పూర్తి పేరు" required>
+            <input type="email" id="email" name="email" placeholder="ఇమెయిల్" required>
+            <select id="user-type" name="user-type" required>
+                <option value="" disabled selected>మీ పాత్రను ఎంచుకోండి</option>
+                <option value="student">విద్యార్థి</option>
+                <option value="teacher">గురువు</option>
+                <option value="other">తల్లిదండ్రులు</option>
+            </select>
+            <input type="password" id="password" name="password" placeholder="పాస్వర్డ్" required>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="పాస్వర్డ్ను నిర్ధారించండి" required>
+            <input type="submit" value="సైన్ ఇన్ చేయండి">
+        </form>
+        <div class="login-redirect">
+            <p>ఇప్పటికే ఖాతా ఉందా? <a href="http://localhost:8000/api/v1/users/login_telugu" id="login-link">ఇక్కడ లాగిన్ అవ్వండి</a></p>
+        </div>
+    </div>
+    <script src="/js/register_telugu.js"></script>
+</body>
+</html>

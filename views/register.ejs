@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">Register</h1>
+        <div class="language-container">
+            <a href="http://localhost:8000/" class="language-button">Language Selection</a>
+        </div>
+        <form class="signup-form" id="signup-form">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <select id="user-type" name="user-type" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="login-redirect">
+            <p>Already have an account? <a href="http://localhost:8000/api/v1/users/login" id="login-link">Login here</a></p>
+        </div>
+    </div>
+    <script src="/js/register.js"></script>
+</body>
+</html>
